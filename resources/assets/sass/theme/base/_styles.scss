@@ -1,0 +1,72 @@
+
+/*------------- #Styles for Text Selection --------------*/
+/*Selection dark*/
+.selection--dark::-moz-selection {
+  background: #2f2c2c;
+  color: #acacac; }
+
+.selection--dark::selection {
+  background: #2f2c2c;
+  color: #acacac; }
+
+/*Selection primary*/
+.selection--primary::-moz-selection {
+  background: #4cc2c0;
+  color: #fff; }
+
+.selection--primary::selection {
+  background: #4cc2c0;
+  color: #fff; }
+
+/*Selection gray*/
+.selection--gray::-moz-selection {
+  background: #e1e1e1;
+  color: #2f2c2c; }
+
+.selection--gray::selection {
+  background: #e1e1e1;
+  color: #2f2c2c; }
+
+/*------------- #Styles for list --------------*/
+.list > li {
+  margin-bottom: 18px;
+  font-size: 18px;
+  transition: all .3s ease; }
+@media (max-width: 640px) {
+  .list > li {
+    font-size: 14px; } }
+.list > li a, .list > li li {
+  color: #acacac;
+  display: block;
+  overflow: hidden; }
+.list > li i {
+  margin-right: 30px;
+  margin-top: 8px;
+  font-size: 12px;
+  float: left;
+  transition: all .3s ease; }
+
+.list--secondary a:hover, .list--secondary li:hover {
+  color: #f15b26; }
+
+.list--secondary i {
+  color: #f15b26; }
+
+.list--primary a:hover, .list--primary li:hover {
+  color: #4cc2c0; }
+
+.list--primary i {
+  color: #4cc2c0; }
+
+.list--standard a:hover, .list--standard li:hover {
+  color: #2f2c2c; }
+
+.list--standard .number {
+  color: #2f2c2c;
+  margin-right: 24px;
+  float: left; }
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
