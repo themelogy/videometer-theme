@@ -24,7 +24,7 @@
                 <span class="post__date">
                     <i class="seoicon-clock"></i>
                     <time class="published" datetime="{{ $post->created_at }}">
-                        {{ $post->created_at->formatLocalized('d F Y') }}
+                        {{ $post->created_at->formatLocalized('%d %B %Y') }}
                     </time>
                 </span>
                 <span class="category">

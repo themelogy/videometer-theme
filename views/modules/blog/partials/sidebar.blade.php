@@ -48,7 +48,7 @@
                             <span class="post__date">
                                 <i class="seoicon-clock"></i>
                                 <time class="published" datetime="{{ $recent->created_at }}">
-                                    {{ $recent->created_at->formatLocalized('d F Y') }}
+                                    {{ $recent->created_at->formatLocalized('%d %B %Y') }}
                                 </time>
                             </span>
                         </div>
