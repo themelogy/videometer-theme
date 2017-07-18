@@ -17,7 +17,7 @@
                             <a href="{{ $post->present()->firstImage(690,null,'fit',80) }}" class="link-image js-zoom-image">
                                 <i class="seoicon-zoom"></i>
                             </a>
-                            <a href="#" class="link-post">
+                            <a href="{{ $post->url }}" class="link-post">
                                 <i class="seoicon-link-bold"></i>
                             </a>
                         </div>
@@ -33,16 +33,16 @@
                                     <a href="{{ $post->url }}">{{ $post->title }}</a>
                                 </h2>
                                 <div class="post-additional-info">
-                <span class="post__date">
-                    <i class="seoicon-clock"></i>
-                    <time class="published" datetime="{{ $post->created_at }}">
-                        {{ $post->created_at->formatLocalized('%d %B %Y') }}
-                    </time>
-                </span>
+                                    <span class="post__date">
+                                        <i class="seoicon-clock"></i>
+                                        <time class="published" datetime="{{ $post->created_at }}">
+                                            {{ $post->created_at->formatLocalized('%d %B %Y') }}
+                                        </time>
+                                    </span>
                                     <span class="category">
-                    <i class="seoicon-tags"></i>
-                    <a href="{{ $post->category->url }}">{{ $post->category->name }}</a>
-                </span>
+                                        <i class="seoicon-tags"></i>
+                                        <a href="{{ $post->category->url }}">{{ $post->category->name }}</a>
+                                    </span>
                                 </div>
                                 <p class="post__text">
                                     {!! $post->content !!}
